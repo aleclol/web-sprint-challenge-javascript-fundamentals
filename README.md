@@ -25,14 +25,38 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    
+    .map: Takes a function as an argument and then applies that function to each element (or index, or the whole array) in an array. It then returns the resulting modified array as a new array. Good for entire dataset manipulation.
+    
+    .reduce: Also takes a function as an argument and then applies that function to each element/currentValue (or index, or the whole array) in an array. After each running of the function the result is stored in the accumulator parameter. It returns a value, which is the result of running the function on the final element in the array. Good for averages, totals, and other simple statistics.
+    
+    .filter: Also takes a function as an argument and then applies that function to each element (or index, or the whole array) in an array. It then returns an array, not of modified values, but of elements that when input to your filter function return "true". Good for creating specific data subsets based off a given criteria.
 
 2. Explain the difference between a callback and a higher order function.
 
+    callback: A function that is defined previously in the code, then passed to another function as an argument.
+
+    higher order function: A function that takes one or more functions as arguments.
+
 3. Explain what a closure is.
+
+    closure: A function plus its lexical environment. I.e. Every function comes with a specific reference library that is defined when the function is defined, but can be modified subsequently. It's sort of like the function is in an object where the first key is the actual function/method, but there is a second hidden key: an array of variables the function has access to. I.e. a closure is a single-method object.
 
 4. Describe the four principles of the 'this' keyword.
 
+    1. Global/Window: When no context is defined, the Window object is the default.
+    2. Implicit: Context is to the left of the dot. E.g. "myObj" in myObj.method();
+    3. Explicit: Using .call, .bind, or .apply to define "this".
+        .call:
+        .bind:
+        .apply:
+
+    4. New keyword: sets "this" to point to a new object which is created by a constructor function.
+
 5. Why do we need super() in an extended class?
+
+    We need super() to pass arguments from a child class to a parent class and obtain properties and methods from that parent.
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
