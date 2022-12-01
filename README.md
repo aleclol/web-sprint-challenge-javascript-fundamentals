@@ -46,10 +46,10 @@ Edit this document to include your answers after each question. Make sure to lea
 
     1. Global/Window: When no context is defined, the Window object is the default.
     2. Implicit: Context is to the left of the dot. E.g. "myObj" in myObj.method();
-    3. Explicit: Using .call, .bind, or .apply to define "this".
-        .call:
-        .bind:
-        .apply:
+    3. Explicit: Using .call, .bind, or .apply to define "this":
+        .call: Pass in arguments one-by-one, immediately invokes the function.
+        .bind: Pass in arguments one-by-one, returns a brand-new function to be invoked later.
+        .apply: Pass in the arguments as an array, immediately invokes the function.
 
     4. New keyword: sets "this" to point to a new object which is created by a constructor function.
 
